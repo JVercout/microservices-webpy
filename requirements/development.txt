@@ -1,0 +1,5 @@
+-r common.txt
+bpython==0.16
+pytest==3.0.5
+pytest-cov==2.4.0
+Paste==2.0.3
