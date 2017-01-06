@@ -1,7 +1,7 @@
 import web
 from services.management import management
 from services.watchgateway import watchgateway
-web.config.debug = True
+#web.config.debug = True
 
 urls = (
     '/management', management.app,

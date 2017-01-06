@@ -27,8 +27,12 @@
     * Celery tasks status
  * Celery tasks
     * Redis broker and backend
-    * Celery database access, threaded with init and close database connection http://www.prschmid.com/2013/04/using-sqlalchemy-with-celery-tasks.html
+    * Routing queues according policy: support, alarm
+    * Routing queues with different prefetch.
+    * Celery database access, threaded with init and close database connection http://www.prschmid.com/2013/04/
+    using-sqlalchemy-with-celery-tasks.html
     * Celery single-tasks (lock across worker)
+    * Check reliability: CELERY_ACKS_LATE, CELERY_DISABLE_RATE_LIMITS, CELERYD_PREFETCH_MULTIPLIER=1
  * Run admin/management tasks as one-off processes
  * Load critical settings (passphrases) through environment variables (overload)
  * MySQL
@@ -36,6 +40,7 @@
  * Refactor testing coverage (through app folder?)
  * Integration testing
  * Acceptance tests accross microservices
+
 
 ## Installation
 ```

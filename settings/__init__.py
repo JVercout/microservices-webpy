@@ -8,6 +8,8 @@ else:
 
 if settings_path == 'settings.dev':
     from settings.dev import *
+elif settings_path == 'settings.test':
+    from settings.test import *
 elif settings_path == 'settings.prod':
     from settings.prod import *
 else:
