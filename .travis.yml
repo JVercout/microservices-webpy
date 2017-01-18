@@ -5,3 +5,5 @@ python:
 install: "pip install -r requirements/development.txt"
 # command to run tests
 script: pytest
+env:
+  MICROSERVICES_SETTINGS="settings.test"
