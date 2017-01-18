@@ -14,10 +14,15 @@ class index:
 def app():
     urls = ('/', 'index')
 
-    current_env = os.environ['MICROSERVICES_SETTINGS']
+    current_env = False
+    if 'MICROSERVICES_SETTINGS' in os.environ:
+        current_env = os.environ['MICROSERVICES_SETTINGS']
+
     os.environ['MICROSERVICES_SETTINGS'] = 'settings.test'
     return WebApplication(urls, globals())
-    os.environ['MICROSERVICES_SETTINGS'] = current_env
+
+    if current_env:
+        os.environ['MICROSERVICES_SETTINGS'] = current_env
 
 
 def test_database_processor(app):
