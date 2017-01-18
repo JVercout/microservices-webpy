@@ -1,5 +1,7 @@
 # Microservices Framework
 
+[![Build Status](https://travis-ci.org/JVercout/microservices-webpy.svg?branch=master)](https://travis-ci.org/JVercout/microservices-webpy)
+
 ## Requirements
  * Python 2.7.12
  * Pip manager
