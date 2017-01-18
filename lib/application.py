@@ -6,13 +6,13 @@ from lib.models import db
 
 class WebApplication(web.application):
     """
-        WebApplication
-        Precessor connection with database
-        Configuration loading
+    WebApplication
+    Precessor connection with database
+    Configuration loading
     """
     def __init__(self, mapping, fvars, autoreload=None):
-        web.config.debug = settings.DEBUG
         web.application.__init__(self, mapping, fvars, autoreload)
+        web.config.debug = settings.DEBUG
         self.add_processor(connection_processor)
 
 
@@ -30,8 +30,8 @@ tokens = ('aaa')
 
 def token_authentication_processor(handler):
     """
-        Basic Token Authentication
-        Authenticate a request with a predefined token per device
+    Basic Token Authentication
+    Authenticate a request with a predefined token per device
     """
     auth = web.ctx.env.get('HTTP_AUTHORIZATION')
     authreq = False

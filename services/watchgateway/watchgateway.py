@@ -20,5 +20,6 @@ class Alarm:
         web.header('Content-type', 'application/json')
         return json.dumps({'status': 'ko'})
 
+
 app = WebApplication(urls, globals())
 # app.add_processor(token_authentication_processor)
