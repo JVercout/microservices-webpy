@@ -18,7 +18,7 @@
    Source: http://docs.sqlalchemy.org/en/rel_1_1/orm/contextual.html#using-thread-local-scope-with-web-applicationsr
  * Unit testing of web-services
  * Unit testing database layer (models & operations)
-
+ * Travis integration
 
 ## Todo
  * Application logging
